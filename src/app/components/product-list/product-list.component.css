@@ -1,0 +1,51 @@
+ul {
+    list-style-type: none;
+    margin-left: 37%;
+    padding: 0
+}
+
+.rating {
+    margin-left: 37%
+}
+
+.page {
+    background-color: #dfe6e0;
+    padding: 2%;
+    margin: auto
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.fa {
+    color: #f2dd1d
+}
+
+.card-img-top {
+    width: 90%;
+    height: 225px
+}
+
+.view {
+    /* background-color: #dfe6e0; */
+    padding: 10px;
+    margin: 20px
+}
+
+.card {
+    width: 95%;
+    padding: 0px;
+    margin-left: 2%
+}
+
+.card-footer {
+    background-color: #ff772e;
+    font-weight: 700
+}
+
+.price {
+    color: #ff4517;
+    font-weight: 600
+}

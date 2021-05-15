@@ -1,0 +1,33 @@
+.security-btn {
+    position:relative;
+    min-width:85px;
+    color:#fff;
+    /* border:10px solid #205b8d; */
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:43px;
+    background:#205b8d;
+    padding: auto;
+    margin-top: 9px;
+}
+
+.login-status-header {
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:flex
+}
+
+.login-status-user-info {
+    border:1px;
+    padding:5px 17px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    transition:all .5s ease;
+    color: white;
+}

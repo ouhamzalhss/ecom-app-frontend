@@ -1,0 +1,84 @@
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- loop over the collection of products -->
+        <!-- <div *ngFor="let prod of products" class="col-md-3">
+          <div class="product-box">
+            
+              <a routerLink="/products/{{ prod.id }}">
+                <img src="{{ prod.imageUrl }}" alt="prod.imageUrl" class="img-responsive">
+              </a>
+
+              <a routerLink="/products/{{ prod.id }}">
+                <h1>{{ prod.name }}</h1>
+              </a>
+              <div class="price">{{ prod.unitPrice | currency:'USD' }}</div>
+              <button (click)="addToCart(prod)" class="btn btn-primary btn-sm"> Add to cart</button>
+          </div>
+        </div> -->
+
+        <!--Card 1-->
+        <div *ngFor="let prod of products" class="col-md-3">
+          <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
+              <!--Card image-->
+              <div class="view view-cascade overlay text-center"> 
+                <a routerLink="/products/{{ prod.id }}">
+                <img src="{{ prod.imageUrl }}" alt="prod.imageUrl" class="img-responsive"> 
+               </a>
+                <a>
+                      <div class="mask rgba-white-slight"></div>
+                  </a>
+                 </div>
+              <!--Card Body-->
+              <div class="card-body card-body-cascade text-center">
+                  <!--Card Title-->
+                  <h4 class="card-title"><strong><a routerLink="/products/{{ prod.id }}">{{ prod.name }}</a></strong></h4> <!-- Card Description-->
+                  <p class="card-text">This is a Mobile phone with all the advance features and at best price. </p>
+                  <p class="price">{{ prod.unitPrice | currency:'USD' }}</p> <!-- Card Rating-->
+                  <ul class="row rating">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                  </ul>
+                  <!--Card footer-->
+                  <div class="card-footer">
+                       <a (click)="addToCart(prod)" class="clickable"> ADD TO CART </a> 
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+        <!-- if products empty then show message -->
+          <div *ngIf="products?.length == 0" class="alert alert-warning col-md-12" role="alert" >
+              No products found.
+          </div>
+
+      </div>
+
+
+      <div class="footer-pagination">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- <ngb-pagination [(page)]="thePageNumber"
+                                        [pageSize]="thePageSize"
+                                        [collectionSize]="theTotalElements"
+                                        (pageChange)="listProducts()">
+
+                        </ngb-pagination> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
