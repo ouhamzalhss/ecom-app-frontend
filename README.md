@@ -4,6 +4,8 @@ Ecommere application using new Tech Spring boot Angular, Okta, and Bootstrap
 
 https://www.youtube.com/watch?v=G6Nj1PcNomQ
 
+Backend Part ( Spring Boot ): https://github.com/ouhamzalhss/ecom-app-backend
+
 # AngularEcommerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.7.
